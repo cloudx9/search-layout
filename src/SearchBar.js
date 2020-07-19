@@ -28,7 +28,7 @@ export default withNavigation(
             ref={(view) => {
               this._textInput = view;
             }}
-            placeholder="Search"
+            placeholder={this.props.placeHolder || "Search"}
             placeholderTextColor={this.props.placeholderTextColor || "#ccc"}
             value={this.state.text}
             autoCapitalize="none"
